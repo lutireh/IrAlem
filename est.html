@@ -1,0 +1,651 @@
+<!doctype html>
+<!--
+  Material Design Lite
+  Copyright 2015 Google Inc. All rights reserved.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      https://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License
+    Moodifcado por: Luiza Rehbein
+  Data da ultima modificação: 22.05.20
+-->
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <title>Estabelecimentos</title>
+
+  <!-- Page styles -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    #view-source {
+      position: fixed;
+      display: block;
+      right: 0;
+      bottom: 0;
+      margin-right: 40px;
+      margin-bottom: 40px;
+      z-index: 900;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+
+    <div class="android-header mdl-layout__header mdl-layout__header--waterfall">
+      <div class="mdl-layout__header-row">
+        <span class="android-title mdl-layout-title">
+          <img class="android-logo-image" src="images/logo.png">
+        </span>
+        <!-- Add spacer, to align navigation to the right in desktop -->
+        <div class="android-header-spacer mdl-layout-spacer"></div>
+        <!-- Navigation -->
+        <div class="android-navigation-container">
+          <nav class="android-navigation mdl-navigation">
+            <a class="mdl-navigation__link mdl-typography--text-uppercase" href="index.html">Home</a>
+            <a class="mdl-navigation__link mdl-typography--text-uppercase" href="direitos.html">Direitos</a>
+            <a class="mdl-navigation__link mdl-typography--text-uppercase" href="yt.html">Youtubers</a>
+            <a class="mdl-navigation__link mdl-typography--text-uppercase" href="est.html">Estabelecimentos</a>
+            <a class="mdl-navigation__link mdl-typography--text-uppercase" href="colabore.html">Colabore</a>
+          </nav>
+        </div>
+        <span class="android-mobile-title mdl-layout-title">
+          <img class="android-logo-image" src="images/logo.png">
+        </span>
+      </div>
+    </div>
+
+    <div class="android-drawer mdl-layout__drawer">
+      <span class="mdl-layout-title">
+        <img class="android-logo-image" src="images/logo.png">
+      </span>
+      <nav class="mdl-navigation">
+        <a class="mdl-navigation__link" href="direitos.html">Direitos</a>
+        <a class="mdl-navigation__link" href="yt.html">Youtubers</a>
+        <a class="mdl-navigation__link" href="est.html">Estabelecimentos</a>
+        <a class="mdl-navigation__link" href="colabore.html">Colabore</a>
+      </nav>
+    </div>
+
+
+    <div class="android-content mdl-layout__content">
+      <a name="top"></a>
+      <div class="android-be-together-section mdl-typography--text-center">
+        <div class="logo-font android-slogan">Estabelecimentos</div>
+        <div class="logo-font android-sub-slogan"></div>
+        <a href="#screens">
+          <button class="android-fab mdl-button mdl-button--colored mdl-js-button mdl-button--fab mdl-js-ripple-effect">
+            <i class="material-icons">expand_more</i>
+          </button>
+        </a>
+      </div>
+      <div class="android-button-section mdl-typography--text-center">
+        <a name="up"></a>
+        <div class="logo-font android-sub-slogan">Categorias</div>
+        <a href="#mercado">
+          <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+            Mercados
+          </button>
+        </a>
+        <a href="#restaurante">
+          <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+            Restaurantes
+          </button>
+        </a>
+        <a href="#diversao">
+          <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+            Diversão
+          </button>
+        </a>
+        <a href="#hotel">
+          <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+            Hotéis
+          </button>
+        </a>
+        <a href="#publico">
+          <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+            Espaços públicos
+          </button>
+      </div>
+      <div class="android-more-section">
+        <a name="screens"></a>
+        <div class="android-section-title mdl-typography--display-1-color-contrast">Nossa seleção de estabelecimentos acessíveis para pessoas com deficiência física</div>
+        <div class="android-card-container mdl-grid">
+          <!--Celeiro-->
+          <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+            <a name="mercado"></a>
+            <div class="mdl-card__media">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3551.7758794808933!2d-52.61433308528861!3d-27.100361807582996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94e4b69f2b7c1b3d%3A0xbf406dc4e00f3101!2sCeleiro%20Supercenter!5e0!3m2!1spt-BR!2sbr!4v1589996496531!5m2!1spt-BR!2sbr" width="300" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+            <div class="mdl-card__title">
+              <h4 class="mdl-card__title-text">Supermercado Celeiro</h4>
+            </div>
+            <div class="mdl-card__supporting-text">
+              <span class="mdl-typography--font-light mdl-typography--subhead">Em nossa essência sempre tivemos o princípio e visão de que evoluir passa pelo respeito ao cliente e entendimento das necessidades culturais de uma região que sempre esteve em busca de diferenciais e novidades. A nossa evolução é perceptível através da estrutura que hoje disponibilizamos aos nossos clientes com o intuito de oferecer sempre a melhor compra.
+              </span>
+            </div>
+            <div class="mdl-card__actions">
+              <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="https://www.celeiro.com.br/">
+                Acesse ao site
+                <i class="material-icons">chevron_right</i>
+              </a>
+            </div>
+          </div>
+          <!--Brasão-->
+          <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+            <div class="mdl-card__media">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3551.9737527426087!2d-52.61909508528863!3d-27.0941235073195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94e4b69d5bd4c8e5%3A0x63f8ff5629d970a7!2sBras%C3%A3o%20Avenida!5e0!3m2!1spt-BR!2sbr!4v1589996323555!5m2!1spt-BR!2sbr" width="300" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+            <div class="mdl-card__title">
+              <h4 class="mdl-card__title-text">Supermercado Brasão</h4>
+            </div>
+            <div class="mdl-card__supporting-text">
+              <span class="mdl-typography--font-light mdl-typography--subhead">Com o intuito de pensar sempre no bem estar dos nossos clientes, o Brasão supermercados conta com espaços agradáveis para suas compras, também temos espaço de panificadora onde você pode encontrar com sua família ou amigos e se deliciar com nossas deliciosas comidas.
+              </span>
+            </div>
+            <div class="mdl-card__actions">
+              <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="https://www.sitemercado.com.br/brasaochapeco/">
+                Acesse ao site
+                <i class="material-icons">chevron_right</i>
+              </a>
+            </div>
+          </div>
+          <!--Galpão Grill-->
+          <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+            <a name="restaurante"></a>
+            <div class="mdl-card__media">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3551.996083516507!2d-52.62189818528884!3d-27.09341940728999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94e4b4285ee95307%3A0xa66e37264ae746c4!2sGalp%C3%A3o%20Grill%20e%20Pizza!5e0!3m2!1spt-BR!2sbr!4v1588103149380!5m2!1spt-BR!2sbr" width="300" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+            <div class="mdl-card__title">
+              <h4 class="mdl-card__title-text">Galpão Grill</h4>
+            </div>
+            <div class="mdl-card__supporting-text">
+              <span class="mdl-typography--font-light mdl-typography--subhead">É um restaurante onde servem rodízio de pizzas com acompanhamento de Baby Beef, o atendimento é feito de terça à domingo das 11h às 14h30 e 19h30 às 23h.Não atendem na segunda-feira.</br></span>
+              <span class="mdl-typography mdl-typography--subhead">
+                Disponibilizam:</br>
+                Estacionamento acessível</br>
+                Balcão e mesas acessíveis</br>
+                Banheiro acessível</br>
+                Circulação interna acessível</br></span>
+            </div>
+            <div class="mdl-card__actions">
+              <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="http://www.galpaogrill.com.br/home/">
+                Acesse ao site
+                <i class="material-icons">chevron_right</i>
+              </a>
+            </div>
+          </div>
+          <!--Madero-->
+          <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+            <div class="mdl-card__media">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3552.0423925524897!2d-52.62034398528886!3d-27.091959207228253!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94e4b6a665bf9191%3A0xb24b688109b08509!2sMadero%20Container!5e0!3m2!1spt-BR!2sbr!4v1588105953590!5m2!1spt-BR!2sbr" width="300" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+            <div class="mdl-card__title">
+              <h4 class="mdl-card__title-text">Madero Container</h4>
+            </div>
+            <div class="mdl-card__supporting-text">
+              <span class="mdl-typography--font-light mdl-typography--subhead">Um projeto inovador com um ambiente descolado. O Madero Container combina um cardápio simplificado com a qualidade de sempre. Nosso trabalho e nossa dedicação são para que todos tenham a melhor experiência conosco.</span>
+              <span class="mdl-typography mdl-typography--subhead">
+                Disponibilizam:
+                Estacionamento acessível</br>
+                Balcão e mesas acessíveis</br>
+                Banheiro acessível</br>
+                Circulação interna acessível</br>
+              </span>
+            </div>
+
+            <div class="mdl-card__actions">
+              <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="https://www.restaurantemadero.com.br/">
+                Acesse ao site
+                <i class="material-icons">chevron_right</i>
+              </a>
+            </div>
+          </div>
+          <!--Giulietta-->
+          <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+            <div class="mdl-card__media">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3551.6822744371057!2d-52.61912648528836!3d-27.10331240770758!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94e4b7eb29f64a8b%3A0x75c3ada2d453c7c6!2sGiulietta%20Caf%C3%A9s%20-%20Centro%20Chapec%C3%B3!5e0!3m2!1spt-BR!2sbr!4v1589996758821!5m2!1spt-BR!2sbr" width="300" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+            <div class="mdl-card__title">
+              <h4 class="mdl-card__title-text">Giulietta Cafés</h4>
+            </div>
+            <div class="mdl-card__supporting-text">
+              <span class="mdl-typography--font-light mdl-typography--subhead">O menu deste café é recomendado para os amantes da culinária. Ser-lhe-á oferecido bom café. É sempre uma excelente ideia aproveitar o ambiente acolhedor.</br></span>
+              <span class="mdl-typography mdl-typography--subhead">
+                Disponibilizam:</br>
+                Balcão e mesas acessíveis</br>
+                Banheiro acessível</br>
+                Circulação interna acessível</br></span>
+            </div>
+            <div class="mdl-card__actions">
+              <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="https://www.giuliettacafes.com.br/?utm_source=restaurantguru&utm_medium=referral">
+                Acesse ao site
+                <i class="material-icons">chevron_right</i>
+              </a>
+            </div>
+          </div>
+          <!--Tojo-->
+          <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+            <div class="mdl-card__media">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3552.033243196345!2d-52.61799678528864!3d-27.092247707240467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94e4b682c72540ab%3A0xbfabb2285b47cbd9!2sTojo%20Fusion%20Cozinha!5e0!3m2!1spt-BR!2sbr!4v1589997048030!5m2!1spt-BR!2sbr" width="300" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+            <div class="mdl-card__title">
+              <h4 class="mdl-card__title-text">Tojo Cozinha Fusion</h4>
+            </div>
+            <div class="mdl-card__supporting-text">
+              <span class="mdl-typography--font-light mdl-typography--subhead">Os pratos da cozinha chinesa são muito agradáveis e o menu é bem organizado. Venha para este restaurante em um intervalo e experimente sushi fascinante, ceviche ótimo e sashimi bom. Aqui o serviço é pronto. Temos um ambiente bonito e aconchegante.</br></span>
+              <span class="mdl-typography mdl-typography--subhead">
+                Disponibilizam:</br>
+                Balcão e mesas acessíveis</br>
+                Banheiro acessível</br>
+                Circulação interna acessível</br></span>
+            </div>
+            <div class="mdl-card__actions">
+              <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="https://www.facebook.com/tojocozinhafusion/?utm_source=restaurantguru&utm_medium=referral">
+                Acesse ao site
+                <i class="material-icons">chevron_right</i>
+              </a>
+            </div>
+          </div>
+          <!--AmoSim-->
+          <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+            <div class="mdl-card__media">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3551.6954214606617!2d-52.61880798528861!3d-27.102898007690044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94e4b69ffb138fd1%3A0xe708abcf5c065981!2sAmosim%20Cozinha%20Saud%C3%A1vel!5e0!3m2!1spt-BR!2sbr!4v1589997292366!5m2!1spt-BR!2sbr" width="300" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+            <div class="mdl-card__title">
+              <h4 class="mdl-card__title-text">AmoSim</h4>
+            </div>
+            <div class="mdl-card__supporting-text">
+              <span class="mdl-typography--font-light mdl-typography--subhead">O menu deste restaurante é recomendado para os amantes da culinária pois conta com uma grande variedade de pratos que além de saborosos são saudáveis e lindos. Os clientes gostam da decoração amável e ambiente acolhedor aqui.</br></span>
+              <span class="mdl-typography mdl-typography--subhead">
+                Disponibilizam:</br>
+                Balcão e mesas acessíveis</br>
+                Banheiro acessível</br>
+                Circulação interna acessível</br></span>
+            </div>
+            <div class="mdl-card__actions">
+              <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="http://www.amosimcozinhasaudavel.com.br/">
+                Acesse ao site
+                <i class="material-icons">chevron_right</i>
+              </a>
+            </div>
+          </div>
+          <!--El Cachorrito-->
+          <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+            <div class="mdl-card__media">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3551.5122251860253!2d-52.61522358528832!3d-27.108671907933893!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94e4b6a8ac849dd3%3A0x52fdc630e4b800cf!2sEl%20Cachorrito%20Container!5e0!3m2!1spt-BR!2sbr!4v1589997618577!5m2!1spt-BR!2sbr" width="300" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+            <div class="mdl-card__title">
+              <h4 class="mdl-card__title-text">El Cachorrito</h4>
+            </div>
+            <div class="mdl-card__supporting-text">
+              <span class="mdl-typography--font-light mdl-typography--subhead">Se estiver com fome depois de passear em Catedral Santo Antônio, vá a este pub & bar para comer. O menu de pub & bar El Cachorrito é recomendado para os amantes da culinária. O ambiente exótico satisfaz os visitantes e atrai ainda mais clientes.</br></span>
+              <span class="mdl-typography mdl-typography--subhead">
+                Disponibilizam:</br>
+                Balcão e mesas acessíveis</br>
+                Banheiro acessível</br>
+                Circulação interna acessível</br></span>
+            </div>
+            <div class="mdl-card__actions">
+              <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="https://pt-br.facebook.com/ElcachorritoCco">
+                Acesse ao site
+                <i class="material-icons">chevron_right</i>
+              </a>
+            </div>
+          </div>
+          <!--Sebo-->
+          <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+            <div class="mdl-card__media">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3551.7492512543845!2d-52.608438685288434!3d-27.101201207618427!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94e4b6bd4957a021%3A0x2f80a73533fccb05!2sSebo%20Bar%20e%20Antiguidades!5e0!3m2!1spt-BR!2sbr!4v1589997830086!5m2!1spt-BR!2sbr" width="300" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+            <div class="mdl-card__title">
+              <h4 class="mdl-card__title-text">SEBO Bar e Antiguidades</h4>
+            </div>
+            <div class="mdl-card__supporting-text">
+              <span class="mdl-typography--font-light mdl-typography--subhead">SEBO Bar e Antiguidades tem música ao vivo, uma boa culinária e um ambiente é encantador e a decoração é boa neste pub & bar.
+                </br></span>
+              <span class="mdl-typography mdl-typography--subhead">
+                Disponibilizam:</br>
+                Balcão e mesas acessíveis</br>
+                Banheiro acessível</br>
+                Circulação interna acessível</br></span>
+            </div>
+            <div class="mdl-card__actions">
+              <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="https://pt-br.facebook.com/sebobareantiguidades/">
+                Acesse ao site
+                <i class="material-icons">chevron_right</i>
+              </a>
+            </div>
+          </div>
+          <!--Don'Ana-->
+          <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+            <div class="mdl-card__media">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3551.9716373013284!2d-52.613001185288674!3d-27.09419020732242!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94e4b42788c35f97%3A0xb1c09609b19a2e68!2sPanificadora%20e%20Confeitaria%20Dona%20Ana!5e0!3m2!1spt-BR!2sbr!4v1589999444774!5m2!1spt-BR!2sbr" width="300" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+            <div class="mdl-card__title">
+              <h4 class="mdl-card__title-text">Padaria Don'Ana</h4>
+            </div>
+            <div class="mdl-card__supporting-text">
+              <span class="mdl-typography--font-light mdl-typography--subhead">Pesquise no menu de culinária Brasileira e Alemã. Sopa bom é os pratos mais gostosos. Local garante queijadas saborosas. É o momento de degustar ótimo café.</br></span>
+              <span class="mdl-typography mdl-typography--subhead">
+                Disponibilizam:</br>
+                Balcão e mesas acessíveis</br>
+                Banheiro acessível</br>
+                Estacionamento acessível</br></span>
+            </div>
+            <div class="mdl-card__actions">
+              <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="http://padariadonana.com.br/?utm_source=restaurantguru&utm_medium=referral">
+                Acesse ao site
+                <i class="material-icons">chevron_right</i>
+              </a>
+            </div>
+          </div>
+          <!--Sabor e cia-->
+          <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+            <div class="mdl-card__media">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3551.6091819741314!2d-52.60731368528842!3d-27.105616207804864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94e4b6bb6eac133b%3A0x64077f79ebcd525c!2sSabor%20%26%20Cia%20(Uruguai)!5e0!3m2!1spt-BR!2sbr!4v1589999649474!5m2!1spt-BR!2sbr" width="300" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+            <div class="mdl-card__title">
+              <h4 class="mdl-card__title-text">Padaria e Confeitatia Sabor & Cia</h4>
+            </div>
+            <div class="mdl-card__supporting-text">
+              <span class="mdl-typography--font-light mdl-typography--subhead">Clientes destacam que gostam de culinárias Brasileira e Italiana aqui. Beba ótimo cappuccino, é imperdível ao visitar café Sabor & Cia. As pessoas conseguem sentir o ambiente calmo assim que entram aqui</br></span>
+              <span class="mdl-typography mdl-typography--subhead">
+                Disponibilizam:</br>
+                Balcão e mesas acessíveis</br>
+                Banheiro acessível</br>
+                Estacionamento acessível</br></span>
+            </div>
+            <div class="mdl-card__actions">
+              <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="https://www.saborecia.net/">
+                Acesse ao site
+                <i class="material-icons">chevron_right</i>
+              </a>
+            </div>
+          </div>
+          <!--14 Bis-->
+          <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+            <a name="diversao"></a>
+            <div class="mdl-card__media">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3551.9120477516008!2d-52.619150385288606!3d-27.096069007401688!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94e4b69d7ff68655%3A0xbfce236a32261caf!2s14%20Bis%20Bar!5e0!3m2!1spt-BR!2sbr!4v1589999923550!5m2!1spt-BR!2sbr" width="300" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+              <div class="mdl-card__title">
+                <h4 class="mdl-card__title-text">14 Bis</h4>
+              </div>
+              <div class="mdl-card__supporting-text">
+                <span class="mdl-typography--font-light mdl-typography--subhead">Casa noturna com petiscos e lanches variados, além de drinques, cervejas e clima de paquera ao som sertanejo.</br></span>
+                <span class="mdl-typography mdl-typography--subhead">
+                  Disponibilizam:</br>
+                  Balcão e mesa acessíveis</br>
+                  Banheiro acessível</br>
+                  Circulação interna acessível</br>
+                  Estacionamento acessível</br></span>
+              </div>
+              <div class="mdl-card__actions">
+                <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="https://pt-br.facebook.com/14bisbar/">
+                  Acesse ao site
+                  <i class="material-icons">chevron_right</i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!--Barzin-->
+          <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+            <div class="mdl-card__media">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3552.023091586961!2d-52.62024558528866!3d-27.092567807253914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94e4b428197922df%3A0x67e31f3778718631!2sBARZIN!5e0!3m2!1spt-BR!2sbr!4v1590000225094!5m2!1spt-BR!2sbr" width="300" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+              <div class="mdl-card__title">
+                <h4 class="mdl-card__title-text">Barzin</h4>
+              </div>
+              <div class="mdl-card__supporting-text">
+                <span class="mdl-typography--font-light mdl-typography--subhead">É um ótimo lugar para curtir uma música ao vivo comendo deliciosos petiscos e bebendo. Temos um ambiente super aconchegante e divertido, venha conhecer nosso espaço.</br></span>
+                <span class="mdl-typography mdl-typography--subhead">
+                  Disponibilizam:</br>
+                  Balcão e mesas acessíveis</br>
+                  Banheiro acessível</br>
+                  Circulação interna acessível</br></span>
+              </div>
+              <div class="mdl-card__actions">
+                <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="https://www.facebook.com/BarzinChoperia/?utm_source=restaurantguru&utm_medium=referral">
+                  Acesse ao site
+                  <i class="material-icons">chevron_right</i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!--Strike Boliche Bar-->
+          <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+            <div class="mdl-card__media">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3551.9634989921033!2d-52.6200464852887!3d-27.094446807333288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94e4b427f06cc537%3A0x1b29b1f9e7b7e3ed!2sStrike%20Boliche%20%26%20Bar!5e0!3m2!1spt-BR!2sbr!4v1590000479486!5m2!1spt-BR!2sbr" width="300" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+              <div class="mdl-card__title">
+                <h4 class="mdl-card__title-text">Strike Boliche Bar</h4>
+              </div>
+              <div class="mdl-card__supporting-text">
+                <span class="mdl-typography--font-light mdl-typography--subhead">Atualmente o STRIKE BOLICHE BAR dispõe de um ambiente amplo com excelente estrutura interna: com pistas de boliche, Mesas de snooker,telão,som ambiente, com um cardápio variado sempre zelando pela qualidade com as mais diversas porções.É o ponto de encontro de todas as idades</br></span>
+                <span class="mdl-typography mdl-typography--subhead">
+                  Disponibilizam:</br>
+                  Balcão e mesas acessíveis</br>
+                  Banheiro acessível</br>
+                  Circulação interna acessível</br>
+                  Estacionamento acessível</br>
+                </span>
+              </div>
+              <div class="mdl-card__actions">
+                <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="http://www.strikebolichebar.com.br/chapeco--sc">
+                  Acesse ao site
+                  <i class="material-icons">chevron_right</i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!--Golden Hotel-->
+          <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+            <a name="hotel"></a>
+            <div class="mdl-card__media">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3551.752065114199!2d-52.61725648528853!3d-27.101112507614644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94e4b69faf8820bf%3A0x99fad6cbdad8f509!2sGolden%20Hotel!5e0!3m2!1spt-BR!2sbr!4v1590000673403!5m2!1spt-BR!2sbr" width="300" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+              <div class="mdl-card__title">
+                <h4 class="mdl-card__title-text">Golden Hotel</h4>
+              </div>
+              <div class="mdl-card__supporting-text">
+                <span class="mdl-typography--font-light mdl-typography--subhead">O Golden Hotel está próximo de tudo que nosso hóspede necessita, com muita acessibilidade o cliente encontrará restaurantes, pizzarias, lanches e cafés de excelente qualidade , além do comércio, agências bancárias, farmácias e supermercados.</br></span>
+                <span class="mdl-typography mdl-typography--subhead">
+                  Disponibilizam:</br>
+                  Balcão e mesas acessíveis</br>
+                  Quarto acessível</br>
+                  Banheiro acessível</br>
+                  Circulação interna acessível</br>
+                  Estacionamento acessível</br>
+                </span>
+              </div>
+              <div class="mdl-card__actions">
+                <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="http://www.goldenhtl.com.br/">
+                  Acesse ao site
+                  <i class="material-icons">chevron_right</i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!--Mogano Hotel-->
+          <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+            <div class="mdl-card__media">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3551.459317809989!2d-52.61721648528817!3d-27.110339208004305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94e4b1535b61d505%3A0x789188c22d7b52f5!2sHotel%20Mogano%20Premium!5e0!3m2!1spt-BR!2sbr!4v1590000786742!5m2!1spt-BR!2sbr" width="300" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+              <div class="mdl-card__title">
+                <h4 class="mdl-card__title-text">Mogano Hotel</h4>
+              </div>
+              <div class="mdl-card__supporting-text">
+                <span class="mdl-typography--font-light mdl-typography--subhead">Prático, confortável, centralizado, com a melhor estrutura para o seu evento, reunião. Modernidade, sofisticação e conforto para quem preza por uma perfeita hospedagem.</br></span>
+                <span class="mdl-typography mdl-typography--subhead">
+                  Disponibilizam:</br>
+                  Balcão e mesas acessíveis</br>
+                  Quarto acessível</br>
+                  Banheiro acessível</br>
+                  Circulação interna acessível</br>
+                  Estacionamento acessível</br>
+                </span>
+              </div>
+              <div class="mdl-card__actions">
+                <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="http://www.moganohoteis.com.br/">
+                  Acesse ao site
+                  <i class="material-icons">chevron_right</i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!--Centro de eventos-->
+          <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+            <a name="publico"></a>
+            <div class="mdl-card__media">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3551.6838353386197!2d-52.60772378528847!3d-27.103263207705446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94e4b6bcc5165d63%3A0x4cb45a4f97d4fd84!2sCentro%20de%20Cultura%20e%20Eventos%20Pl%C3%ADnio%20Arlindo%20de%20Nes!5e0!3m2!1spt-BR!2sbr!4v1590001573267!5m2!1spt-BR!2sbr" width="300" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+              <div class="mdl-card__title">
+                <h4 class="mdl-card__title-text">Centro de eventos Plínio Arlindo de Nes</h4>
+              </div>
+              <div class="mdl-card__supporting-text">
+                <span class="mdl-typography--font-light mdl-typography--subhead">Com localização privilegiada, pode realizar diferentes eventos simultaneamente com conforto e segurança ao público. Essa estrutura proporciona ao público visitante lazer, entretenimento, cultura e bons negócios.</br></span>
+                <span class="mdl-typography mdl-typography--subhead">
+                  Disponibilizam:</br>
+                  Lugares acessíveis no auditório</br>
+                  Banheiro acessível</br>
+                  Circulação interna acessível</br>
+                  Estacionamento acessível</br>
+                </span>
+              </div>
+              <div class="mdl-card__actions">
+                <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="https://www.chapeco.sc.gov.br/cultura/index.php?r=conteudo&idconteudo=19">
+                  Acesse ao site
+                  <i class="material-icons">chevron_right</i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!--EFAPI-->
+          <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+            <div class="mdl-card__media">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3551.9689224251188!2d-52.66315698528876!3d-27.094275807326024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94e4b50089444a61%3A0x9a4990a41a07554d!2sParque%20de%20Exposi%C3%A7%C3%B5es%20Tancredo%20Neves!5e0!3m2!1spt-BR!2sbr!4v1590172874910!5m2!1spt-BR!2sbr" width="300" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+              <div class="mdl-card__title">
+                <h4 class="mdl-card__title-text">Parque de Exposições Tancredo Almeida Neves</h4>
+              </div>
+              <div class="mdl-card__supporting-text">
+                <span class="mdl-typography--font-light mdl-typography--subhead">Lugar acessível,seguro e povo aconchegante. Todas as feiras são voltadas para atender bem as necessidades do público,sem esquecer das atrações e shows de nível nacional ou internacional.</br></span>
+                <span class="mdl-typography mdl-typography--subhead">
+                  Disponibilizam:</br>
+                  Entrada acessível</br>
+                  Banheiro acessível</br>
+                  Circulação interna acessível</br>
+                  Estacionamento acessível</br>
+                </span>
+              </div>
+              <div class="mdl-card__actions">
+                <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="http://www.efapi.com.br/">
+                  Acesse ao site
+                  <i class="material-icons">chevron_right</i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!--CRAS-->
+          <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+            <div class="mdl-card__media">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3552.758753114147!2d-52.63439978528933!3d-27.069361906274725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94e4b5c2538542e5%3A0xb500139bde202461!2sCRAS%20Cristo%20Rei!5e0!3m2!1spt-BR!2sbr!4v1590173178295!5m2!1spt-BR!2sbr" width="300" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+              <div class="mdl-card__title">
+                <h4 class="mdl-card__title-text">CRAS Cristo Rei</h4>
+              </div>
+              <div class="mdl-card__supporting-text">
+                <span class="mdl-typography--font-light mdl-typography--subhead">No CRAS é oferecido o Serviço de Proteção e Atendimento Integral à Família (PAIF) e o Serviço de Convivência e Fortalecimento de Vínculos (SCFV). No CRAS a população também é orientada para saber todos os benefícios assistenciais disponíveis e podem realizar sua inscrição no Cadastro Único para Programas Sociais do Governo Federal.</br></span>
+                <span class="mdl-typography mdl-typography--subhead">
+                  Disponibilizam:</br>
+                  Entrada acessível</br>
+                  Banheiro acessível</br>
+                  Circulação interna acessível</br>
+                  Estacionamento acessível</br>
+                </span>
+              </div>
+              <div class="mdl-card__actions">
+                <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="https://cras.br.com/cras-cristo-rei-chapeco-sc-endereco-e-atendimento/">
+                  Acesse ao site
+                  <i class="material-icons">chevron_right</i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!--Prefeitura-->
+          <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+            <div class="mdl-card__media">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3551.3711903500393!2d-52.613656585288126!3d-27.113116208121657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94e4b419b3607047%3A0xe686a83a88e0acd5!2sPrefeitura%20de%20Chapec%C3%B3!5e0!3m2!1spt-BR!2sbr!4v1590256069530!5m2!1spt-BR!2sbr" width="300" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+              <div class="mdl-card__title">
+                <h4 class="mdl-card__title-text">Prefeitura Municipal de Chapecó</h4>
+              </div>
+              <div class="mdl-card__supporting-text">
+                <span class="mdl-typography--font-light mdl-typography--subhead">Na prefeitura ficam alguns serviços e secretarias como: Gabinete do Prefeito,Gabinete do Vice-Prefeito, Comunicação Social - SECOM, Controladoria-geral, Coordenação de Governo e Gestão - SEGOV, Fazenda - SEFAZ, Procuradoria-geral.</br></span>
+                <span class="mdl-typography mdl-typography--subhead">
+                  Disponibilizam:</br>
+                  Entrada acessível</br>
+                  Banheiro acessível</br>
+                  Circulação interna acessível</br>
+                  Estacionamento acessível</br>
+                </span>
+              </div>
+              <div class="mdl-card__actions">
+                <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="https://www.chapeco.sc.gov.br/">
+                  Acesse ao site
+                  <i class="material-icons">chevron_right</i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <footer class="android-footer mdl-mega-footer">
+        <div class="mdl-mega-footer--top-section">
+          <div class="mdl-mega-footer--left-section">
+            <button class="mdl-mega-footer--social-btn"></button>
+            &nbsp;
+            <button class="mdl-mega-footer--social-btn"></button>
+            &nbsp;
+            <button class="mdl-mega-footer--social-btn"></button>
+          </div>
+          <div class="mdl-mega-footer--right-section">
+            <a class="mdl-typography--font-light" href="#top">
+              Voltar ao topo
+              <i class="material-icons">expand_less</i>
+            </a>
+          </div>
+        </div>
+
+        <div class="mdl-mega-footer--middle-section">
+          <p class="mdl-typography--font-light">Instituto Federal de Santa Catarina - Campus Chapecó</p>
+          <p class="mdl-typography--font-light">Copyright 2015 Google Inc. All rights reserved.</p>
+        </div>
+      </footer>
+
+    </div>
+  </div>
+  <script>
+    window.onscroll = function () { myFunction() };
+
+    function myFunction() {
+      if (button.body.scrollTop > 350 || button.documentElement.scrollTop > 350) {
+        document.getElementById("myImg");
+      }
+    }
+  </script>
+  <a href="#up" id="view-source" class="android-fab mdl-button mdl-js-button mdl-button--raised mdl-button--fab mdl-js-ripple-effect"><i class="material-icons">expand_less</i></a>
+  <script src="$$hosted_libs_prefix$$/$$version$$/material.min.js"></script>
+  <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+</body>
+
+</html>
